@@ -1,0 +1,22 @@
+# Poetry Configuration
+# This file configures Poetry's behavior for this project
+
+[virtualenvs]
+# Create virtual environment in project directory
+in-project = true
+
+# Virtual environment path (creates .venv folder)
+path = ".venv"
+
+# Automatically activate virtualenv
+prefer-active-python = true
+
+[installer]
+# Use parallel installation for faster setup
+parallel = true
+
+# Maximum number of workers for parallel installation
+max-workers = 10
+
+# Note: No [repositories] section needed
+# Poetry automatically uses PyPI (https://pypi.org) for all packages

@@ -1,0 +1,47 @@
+# EDI MCP RAG Agent - Requirements
+# Python 3.10+ required
+# Clean, minimal setup for pip
+
+# ==========================================
+# CORE MCP
+# ==========================================
+mcp>=0.9.0
+
+# ==========================================
+# DOCUMENT PARSING (Essential Only)
+# ==========================================
+# PDF parsing
+pypdf>=3.17.0
+pdfplumber>=0.10.0
+
+# Excel/CSV parsing (FAST!)
+polars>=0.19.0
+
+# Word documents
+python-docx>=1.0.0
+openpyxl>=3.1.0
+
+# Web scraping
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
+
+# ==========================================
+# RAG (Vector Database)
+# ==========================================
+chromadb>=0.4.22
+
+# ==========================================
+# Utilities
+# ==========================================
+python-dotenv>=1.0.0
+pydantic>=2.0.0
+requests>=2.31.0
+
+# ==========================================
+# Development & Testing (Optional)
+# ==========================================
+pytest>=7.4.0
+black>=23.0.0
+
+# Note: Removed heavy packages (unstructured, sentence-transformers)
+# We'll add them later when needed!
